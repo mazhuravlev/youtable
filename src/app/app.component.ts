@@ -19,7 +19,7 @@ import {Data} from '@angular/router';
 
 export class AppComponent {
   @ViewChild('refresh') refreshButton;
-  private data: Observable<Data[]>;
+  public data: Observable<Data[]>;
 
   constructor(private  http: HttpClient) {
 
