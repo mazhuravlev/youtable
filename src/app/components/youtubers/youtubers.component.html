@@ -1,0 +1,6 @@
+<h3>Список</h3>
+<div>
+  <div *ngFor="let rec of data | async">
+    <strong  [routerLink]="['/youtuber', rec.name]">[{{rec.name}}]:</strong> {{rec.count}} минут
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<h3>{{youtuber}}</h3>
+<div>
+  <button #refresh>Обновить</button>
+  <div *ngFor="let rec of data | async">
+    <span>[{{rec.date | date: 'dd.MM'}}]</span> {{rec.duration}} минут:  — {{rec.tab}}
+  </div>
+</div>

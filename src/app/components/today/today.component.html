@@ -1,0 +1,7 @@
+<h3>Сегодня</h3>
+<div>
+  <button #refresh>Обновить</button>
+  <div *ngFor="let rec of data | async">
+    <strong [routerLink]="['/youtuber', rec.user]">[{{rec.user}}]</strong> {{rec.duration}} минут:  — {{rec.tab}}
+  </div>
+</div>
